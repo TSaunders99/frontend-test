@@ -42,13 +42,8 @@ class FrontendTestSite extends AbstractFrontendTestSite
         $response = $e->getResponse();
         $response->headers->set(
           'Content-Security-Policy',
-          "default-src 'self'"
-          . ";style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://kit-free.fontawesome.com"
-          . ";frame-src 'self' https://player.vimeo.com https://gcs-vimeo.akamaized.net"
-          . ";media-src 'self' https://player.vimeo.com https://gcs-vimeo.akamaized.net"
-          . ";font-src 'self' https://fonts.gstatic.com https://kit-free.fontawesome.com"
-          . ";script-src 'self' 'unsafe-inline'"
-          . ";script-src-elem 'self' 'unsafe-inline' https://kit.fontawesome.com"
+          "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';"
+
         );
       }
     );

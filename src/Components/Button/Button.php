@@ -79,4 +79,9 @@ class Button extends AbstractComponent
       ->_addModifier('icon')
       ->_addModifier('icon-left');
   }
+
+    public function fullWidth()
+    {
+       return $this->_addModifier('full-width');
+    }
 }

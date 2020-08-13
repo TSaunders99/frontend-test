@@ -20,6 +20,6 @@ assets:
     - "./src/**/*"
   dist: "./src/"
 cubex:
-  port: 9895
+  port: 9893
   base: "./public"
   proxyPort: 3002

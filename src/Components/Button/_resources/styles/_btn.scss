@@ -79,4 +79,8 @@ $this: ".btn";
     color: white;
     background: mix(black, $theme-color-primary, 15%);
   }
+
+  &--full-width{
+    width:100%;
+  }
 }

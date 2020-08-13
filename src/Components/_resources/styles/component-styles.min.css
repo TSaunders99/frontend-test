@@ -54,6 +54,9 @@
   color: white;
   background: #1e9e71;
 }
+.btn--full-width {
+  width: 100%;
+}
 
 .feature-card__icon {
   font-size: 50px;
