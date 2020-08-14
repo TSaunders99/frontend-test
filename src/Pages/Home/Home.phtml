@@ -5,12 +5,13 @@
 use PackagedUi\FontAwesome\FaIcons;
 use ProtectedNet\FrontendTest\Components\Button\Button;
 use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
+use ProtectedNet\FrontendTest\Components\PriceComp\Price;
 use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
 
-<div class="grid-container">
+<div class="grid-container mb-5">
   <div class="grid-x">
     <div class="cell text-center">
       <h1 class="mt-10 mb-10"><strong>About</strong> Us</h1>
@@ -32,7 +33,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
       ?>
     </div>
-    <div class="cell medium-5 end">
+    <div class="cell medium-5">
       <?=
       FeatureCard::i()
         ->setTitle('Loreim ipsum dolor sit amet')
@@ -46,8 +47,122 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
       ?>
     </div>
+      <div class="cell medium-offset-1 medium-5">
+          <?=
+          FeatureCard::i()
+              ->setTitle('Feature Card Icons')
+              ->setDescription(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              )
+              ->setIcon($this->getIcon(FaIcons::INFO))
+              ->textCenter(Breakpoints::SMALL())
+              ->iconCenter(Breakpoints::SMALL())
+              ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+          ?>
+      </div>
+      <div class="cell medium-5 end">
+          <?=
+          FeatureCard::i()
+              ->setTitle('Loreim ipsum dolor sit amet')
+              ->setDescription(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              )
+              ->setIcon($this->getIcon(FaIcons::CHART_LINE))
+              ->textCenter(Breakpoints::SMALL())
+              ->iconCenter(Breakpoints::SMALL())
+              ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+          ?>
+      </div>
+      <div class="cell medium-offset-1 medium-5">
+          <?=
+          FeatureCard::i()
+              ->setTitle('Feature Card Icons')
+              ->setDescription(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              )
+              ->setIcon($this->getIcon(FaIcons::THUMBS_UP))
+              ->textCenter(Breakpoints::SMALL())
+              ->iconCenter(Breakpoints::SMALL())
+              ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+          ?>
+      </div>
+
+
+
+
+
+      <div class="cell medium-5 end">
+          <?=
+          FeatureCard::i()
+              ->setTitle('Loreim ipsum dolor sit amet')
+              ->setDescription(
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              )
+              ->setIcon($this->getIcon(FaIcons::COG))
+              ->textCenter(Breakpoints::SMALL())
+              ->iconCenter(Breakpoints::SMALL())
+              ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+          ?>
+      </div>
   </div>
 </div>
+
+
+<div class="grid-container">
+    <div class="grid-x recruiting-approach-section">
+        <div class="cell text-center">
+            <h1 class="mt-8 mb-8">New <strong>approach</strong> to recruiting</h1>
+        </div>
+        <div class="cell medium-offset-1 medium-5 mr-2">
+            <p class="para-left">Lorem ipsum dolor sit ametsddsfdsfsdfsd, consectetur adipiscing elit.met sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor nunc. Phasellus id ipsum ac massa tincidunt varius. Duis nec sem eget  dolor sit ame maximus tortor in porttitor. Sed eu tortor nuncmetus</p>
+        </div>
+        <div class="cell medium-5 end mb-5 ml-2">
+            <p class="para-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor   dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor nunc Phasellus id ipsum ac massa tincidunt varius. Duis nec sem eget metus</p>
+        </div>
+    </div>
+</div>
+
+<div class="grid-container mt-10">
+    <div class="ml-20 mr-20">
+        <div class="grid-x pricing-section">
+            <div class="cell medium-3 text-right">
+                <h1 class="mt-2 mb-3"><strong>Plans &</strong> pricing</h1>
+                <p class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus torto</p>
+            </div>
+            <div class="cell medium-3">
+                <?= Price::i()
+                    ->setTitle('Start Up')
+                    ->setPrice('$29')
+                    ->setSubtitle('1 job for 30 days')
+                    ->setDescription('One Time Fee Allows 5 Job Postings HighLighted Job Post Posted For 90 Days');
+                ?>
+            </div>
+            <div class="cell medium-3">
+                <?= Price::i()
+                    ->setTitle('Enterprise')
+                    ->setPrice('$69')
+                    ->setSubtitle('5 job for 90 days')
+                    ->setDescription('One Time Fee Allows 5 Job Postings HighLighted Job Post Posted For 90 Days');
+                ?>
+            </div>
+            <div class="cell medium-3">
+                <?= Price::i()
+                    ->setTitle('Company')
+                    ->setPrice('$329')
+                    ->setSubtitle('2 job for 30 days')
+                    ->setDescription('One Time Fee Allows 5 Job Postings HighLighted Job Post Posted For 90 Days');
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 <div class="grid-container">
   <div class="grid-x">

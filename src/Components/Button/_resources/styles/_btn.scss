@@ -29,6 +29,7 @@ $this: ".btn";
       background-color: $theme-color-primary;
       color: white;
     }
+
   }
 
 
@@ -82,5 +83,22 @@ $this: ".btn";
 
   &--full-width{
     width:100%;
+  }
+
+  &--animate-price:hover{
+    transform: translateY(4px);
+  }
+
+  &--small{
+    #{$this}{
+      width: 100%;
+    }
+    #{$this}__content-holder {
+      font-size: 11px;
+      padding: 8px 15px;
+    }
+    #{$this}__icon-holder {
+      font-size: 11px;
+    }
   }
 }

@@ -84,4 +84,12 @@ class Button extends AbstractComponent
     {
        return $this->_addModifier('full-width');
     }
+    public function priceAnimate()
+    {
+        return $this->_addModifier('animate-price');
+    }
+    public function small()
+    {
+        return $this->_addModifier('small');
+    }
 }

@@ -1,0 +1,33 @@
+@import 'base';
+
+$this: ".price";
+
+#{$this} {
+  .topPrice{
+    background-color: #ebebeb;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .bottomPrice{
+    background-color: #363636;
+    padding: 30px;
+  }
+  .priceCont{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  &__title{
+    color: $theme-color-primary;
+  }
+  &__subtitle{
+    color: #8a8a8a;
+    margin-bottom: 0px;
+  }
+  &__description{
+    font-size: small;
+    color: white;
+  }
+}

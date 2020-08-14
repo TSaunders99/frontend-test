@@ -1,0 +1,33 @@
+<?php
+/** @var $this Price */
+use ProtectedNet\FrontendTest\Components\PriceComp\Price;
+use ProtectedNet\FrontendTest\Components\Button\Button;
+?>
+
+
+
+
+<div class="<?= $this->getElementName('content') ?>">
+
+    <div class="priceCont text-center">
+        <div class="topPrice">
+            <?php if($this->getTitle()): ?>
+                <h4 class="price__title"><?= $this->getTitle() ?></h4>
+            <?php endif; ?>
+
+            <?php if($this->getPrice()): ?>
+                <h1 class="price__price"><?= $this->getPrice() ?></h1>
+            <?php endif; ?>
+
+            <?php if($this->getPrice()): ?>
+                <p class="price__subtitle"><?= $this->getSubtitle() ?></p>
+            <?php endif; ?>
+        </div>
+        <div class="BottomPrice">
+            <?php if($this->getDescription()): ?>
+                <p class="price__description"><?= $this->getDescription() ?></p>
+            <?php endif; ?>
+            <?= Button::i('Shop Now!')->iconRight("<i class='fa fa-chevron-right'></i>")->priceAnimate()->small()?>
+        </div>
+    </div>
+</div>

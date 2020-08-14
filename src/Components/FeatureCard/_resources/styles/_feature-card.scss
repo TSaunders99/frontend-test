@@ -13,9 +13,12 @@ $this: ".feature-card";
   }
 
   &__title {
-    font-size: 20px;
+    color: $theme-color-primary;
+    font-size: 25px;
+    font-weight: 700;
     line-height: 30px;
     margin: 0;
+    margin-bottom: 10px;
   }
 
   &__subtitle {
@@ -23,9 +26,11 @@ $this: ".feature-card";
   }
 
   &__description {
+    color: #767676;
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
+    font-weight: 100;
   }
 
   @include breakpoint-component('icon-left') {

@@ -1,3 +1,23 @@
 .about-us-section .icon-wrapper i {
   font-size: 30px;
 }
+
+.recruiting-approach-section {
+  color: #e6e6e6;
+  background-image: url("../img/background-section.jpg");
+  background-size: cover;
+}
+.recruiting-approach-section .para-left {
+  color: #23ba85;
+  text-align: right;
+  line-height: 150%;
+  font-weight: bold;
+}
+.recruiting-approach-section .para-right {
+  text-align: left;
+  font-size: small;
+}
+
+.pricing-section .subText {
+  font-size: 11px;
+}
