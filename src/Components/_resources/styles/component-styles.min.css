@@ -78,10 +78,25 @@
 .feature-card__icon * {
   font-size: inherit;
 }
-.feature-card__title {
+.feature-card__percentStyle {
   color: #23ba85;
-  font-size: 25px;
-  font-weight: 700;
+  display: inline-block;
+  margin: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  position: relative;
+  height: 120px;
+  min-width: 120px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #23ba85;
+  border-width: 6px;
+  line-height: 1;
+  font-size: 35px;
+  padding-top: 25px;
+}
+.feature-card__title {
   line-height: 30px;
   margin: 0;
   margin-bottom: 10px;
@@ -90,8 +105,6 @@
   font-size: 16px;
 }
 .feature-card__description {
-  color: #767676;
-  font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-weight: 100;
@@ -158,6 +171,50 @@
     display: flex;
     flex-direction: column;
   }
+}
+.feature-card--about-us .feature-card__title {
+  color: #23ba85;
+  font-size: 25px;
+  font-weight: 700;
+}
+.feature-card--about-us .feature-card__description {
+  color: #767676;
+  font-size: 12px;
+}
+.feature-card--stat-style .feature-card__title {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+.feature-card--stat-style .feature-card__description {
+  color: white;
+  font-size: 12px;
+}
+.feature-card .twenty-five-base {
+  border-color: white;
+  border-top-color: #23ba85;
+  transform: rotate(45deg);
+}
+.feature-card .twenty-five-percent {
+  transform: rotate(-45deg);
+}
+.feature-card .fifty-five-base {
+  border-top-color: white;
+  border-left-color: white;
+  transform: rotate(-45deg);
+}
+.feature-card .fifty-five-percent {
+  transform: rotate(45deg);
+}
+.feature-card .seventy-five-base {
+  border-top-color: white;
+  transform: rotate(-45deg);
+}
+.feature-card .seventy-five-percent {
+  transform: rotate(45deg);
+}
+.feature-card .hundred-base {
+  border-color: #23ba85;
 }
 
 .hero-banner {

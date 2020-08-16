@@ -11,6 +11,9 @@ class FeatureCard extends AbstractComponent
   protected $_icon;
 
   /** @var string */
+  protected $_fillPercent;
+
+  /** @var string */
   protected $_title;
 
   /** @var string */
@@ -36,6 +39,26 @@ class FeatureCard extends AbstractComponent
 
     return $this;
   }
+
+    /**
+     * @return string
+     */
+    public function getPercent()
+    {
+        return $this->_fillPercent;
+    }
+
+    /**
+     * @param string $fillPercent
+     *
+     * @return $this
+     */
+    public function setPercent($fillPercent)
+    {
+        $this->_fillPercent = $fillPercent;
+
+        return $this;
+    }
 
   /**
    * @return string
@@ -233,5 +256,11 @@ class FeatureCard extends AbstractComponent
     {
       $this->_addModifier($classname);
     }
+  }
+  public function aboutUsStyle(){
+      return $this->_addModifier('about-us');
+  }
+  public function statStyle(){
+      return $this->_addModifier('stat-style');
   }
 }

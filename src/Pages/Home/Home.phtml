@@ -31,6 +31,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         ->iconCenter(Breakpoints::SMALL())
         ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
         ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+          ->aboutUsStyle()
       ?>
     </div>
     <div class="cell medium-5">
@@ -45,6 +46,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         ->iconCenter(Breakpoints::SMALL())
         ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+          ->aboutUsStyle()
       ?>
     </div>
       <div class="cell medium-offset-1 medium-5">
@@ -59,6 +61,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
               ->iconCenter(Breakpoints::SMALL())
               ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
               ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->aboutUsStyle()
           ?>
       </div>
       <div class="cell medium-5 end">
@@ -73,6 +76,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
               ->iconCenter(Breakpoints::SMALL())
               ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
               ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->aboutUsStyle()
           ?>
       </div>
       <div class="cell medium-offset-1 medium-5">
@@ -87,6 +91,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
               ->iconCenter(Breakpoints::SMALL())
               ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
               ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->aboutUsStyle()
           ?>
       </div>
 
@@ -106,6 +111,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
               ->iconCenter(Breakpoints::SMALL())
               ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
               ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+              ->aboutUsStyle()
           ?>
       </div>
   </div>
@@ -162,24 +168,78 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
 </div>
 
 <div class="grid-container mt-10">
-    <div class="grid-x stats-section">
+    <div class="grid-x stats-section pb-10">
         <div class="cell text-center">
-            <h1 class="mt-10 mb-10">Site<strong> Stats</strong></h1>
+            <h1 class="mt-10 mb-10">Site<strong> stats</strong></h1>
+        </div>
+        <div class="grid-x about-us-section grid-padding-y">
+            <div class="cell medium-offset-1 medium-5">
+                <?=
+                FeatureCard::i()
+                    ->setTitle('Feature Card Icons')
+                    ->setDescription(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                    )
+                    ->setPercent('75')
+                    ->textCenter(Breakpoints::SMALL())
+                    ->iconCenter(Breakpoints::SMALL())
+                    ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->statStyle()
+                ?>
+            </div>
+            <div class="cell medium-5">
+                <?=
+                FeatureCard::i()
+                    ->setTitle('Loreim ipsum dolor sit amet')
+                    ->setDescription(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                    )
+                    ->setPercent('25')
+                    ->textCenter(Breakpoints::SMALL())
+                    ->iconCenter(Breakpoints::SMALL())
+                    ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->statStyle()
+                ?>
+            </div>
+            <div class="cell medium-offset-1 medium-5">
+                <?=
+                FeatureCard::i()
+                    ->setTitle('Feature Card Icons')
+                    ->setDescription(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                    )
+                    ->setPercent('50')
+                    ->textCenter(Breakpoints::SMALL())
+                    ->iconCenter(Breakpoints::SMALL())
+                    ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->statStyle()
+                ?>
+            </div>
+            <div class="cell medium-5 end">
+                <?=
+                FeatureCard::i()
+                    ->setTitle('Loreim ipsum dolor sit amet')
+                    ->setDescription(
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                    )
+                    ->setPercent('75')
+                    ->textCenter(Breakpoints::SMALL())
+                    ->iconCenter(Breakpoints::SMALL())
+                    ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->statStyle()
+                ?>
+<!--
+.right{
+  z-index: 3;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(90deg); }
+-->
+            </div>
         </div>
     </div>
 </div>
-
-
-
-<div class="grid-container">
-  <div class="grid-x">
-    <div class="cell text-center">
-      <h2 class="mt-10 mb-10">Button examples</h2>
-      <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
-      <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
-      <?= Button::i('Test button')->fullWidth()->ghost() ?>
-    </div>
-  </div>
-</div>
-
-

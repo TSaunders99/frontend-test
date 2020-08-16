@@ -12,10 +12,30 @@ $this: ".feature-card";
     }
   }
 
-  &__title {
+  &__percentStyle{
     color: $theme-color-primary;
-    font-size: 25px;
-    font-weight: 700;
+    display: inline-block;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    position: relative;
+    height: 120px;
+    min-width: 120px;
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color: $theme-color-primary;
+    border-width: 6px;
+
+    line-height: 1;
+    font-size: 35px;
+    padding-top: 25px;
+  }
+
+
+
+  &__title {
     line-height: 30px;
     margin: 0;
     margin-bottom: 10px;
@@ -26,8 +46,6 @@ $this: ".feature-card";
   }
 
   &__description {
-    color: #767676;
-    font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
     font-weight: 100;
@@ -47,5 +65,70 @@ $this: ".feature-card";
     display: flex;
     flex-direction: column;
   }
+
+  &--about-us{
+    #{$this}__title {
+      color: $theme-color-primary;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    #{$this}__description {
+      color: #767676;
+      font-size: 12px;
+    }
+  }
+
+  &--stat-style{
+    #{$this}__title {
+      color:  white;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    #{$this}__description {
+      color: white;
+      font-size: 12px;
+    }
+  }
+
+
+
+
+
+
+  //Hard coded rotations
+  //25%
+  .twenty-five-base{
+    border-color: white;
+    border-top-color: $theme-color-primary;
+    transform: rotate(45deg);
+  }
+  .twenty-five-percent{
+    transform: rotate(-45deg);
+  }
+
+  //50%
+  .fifty-five-base{
+    border-top-color: white;
+    border-left-color: white;
+    transform: rotate(-45deg);
+  }
+  .fifty-five-percent{
+    transform: rotate(45deg);
+  }
+
+  //75%
+  .seventy-five-base{
+    border-top-color: white;
+    transform: rotate(-45deg);
+  }
+  .seventy-five-percent{
+    transform: rotate(45deg);
+  }
+
+  //100%
+  .hundred-base{
+    border-color: $theme-color-primary;
+  }
 }
+
 

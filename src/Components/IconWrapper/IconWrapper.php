@@ -146,4 +146,5 @@ class IconWrapper extends AbstractComponent
     $this->_addModifier('bottom-shadow');
     return $this;
   }
+
 }
