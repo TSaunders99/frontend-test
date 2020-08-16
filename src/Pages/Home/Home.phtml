@@ -170,7 +170,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
 <div class="grid-container mt-10">
     <div class="grid-x stats-section pb-10">
         <div class="cell text-center">
-            <h1 class="mt-10 mb-10">Site<strong> stats</strong></h1>
+            <h1 class="mt-8 mb-8">Site<strong> stats</strong></h1>
         </div>
         <div class="grid-x about-us-section grid-padding-y">
             <div class="cell medium-offset-1 medium-5">
@@ -188,7 +188,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                     ->statStyle()
                 ?>
             </div>
-            <div class="cell medium-5">
+            <div class="cell medium-5 ml-1">
                 <?=
                 FeatureCard::i()
                     ->setTitle('Loreim ipsum dolor sit amet')
@@ -204,21 +204,21 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                 ?>
             </div>
             <div class="cell medium-offset-1 medium-5">
-                <?=
-                FeatureCard::i()
-                    ->setTitle('Feature Card Icons')
-                    ->setDescription(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                    )
-                    ->setPercent('50')
-                    ->textCenter(Breakpoints::SMALL())
-                    ->iconCenter(Breakpoints::SMALL())
-                    ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->statStyle()
-                ?>
+            <?=
+            FeatureCard::i()
+                ->setTitle('Feature Card Icons')
+                ->setDescription(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                )
+                ->setPercent('50')
+                ->textCenter(Breakpoints::SMALL())
+                ->iconCenter(Breakpoints::SMALL())
+                ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                ->statStyle()
+            ?>
             </div>
-            <div class="cell medium-5 end">
+            <div class="cell medium-5 end ml-1">
                 <?=
                 FeatureCard::i()
                     ->setTitle('Loreim ipsum dolor sit amet')
@@ -232,13 +232,6 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                     ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                     ->statStyle()
                 ?>
-<!--
-.right{
-  z-index: 3;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  transform: rotate(90deg); }
--->
             </div>
         </div>
     </div>

@@ -25,6 +25,9 @@ $this: ".price";
   &__title{
     color: $theme-color-primary;
   }
+  &__price{
+    font-weight: bold;
+  }
   &__subtitle{
     color: #8a8a8a;
     margin-bottom: 0px;
