@@ -4,8 +4,6 @@
 
 .recruiting-approach-section {
   color: #e6e6e6;
-  background-image: url("../img/background-section.jpg");
-  background-size: cover;
 }
 .recruiting-approach-section .para-left {
   color: #23ba85;
@@ -24,6 +22,4 @@
 
 .stats-section {
   color: #e6e6e6;
-  background-image: url("../img/background-plant.jpg");
-  background-size: cover;
 }
