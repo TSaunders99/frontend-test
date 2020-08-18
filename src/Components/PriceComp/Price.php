@@ -120,5 +120,4 @@ class Price extends AbstractComponent
         return new static();
     }
 
-
 }

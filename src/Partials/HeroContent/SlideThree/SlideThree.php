@@ -16,4 +16,5 @@ class SlideThree extends AbstractPartial
   {
     return new static();
   }
+
 }
