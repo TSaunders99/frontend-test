@@ -93,11 +93,6 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
               ->aboutUsStyle()
           ?>
       </div>
-
-
-
-
-
       <div class="cell medium-5 end">
           <?=
           FeatureCard::i()
@@ -115,30 +110,30 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
       </div>
   </div>
 </div>
-
-
-<div class="grid-container">
-    <div class="grid-x recruiting-approach-section" style="background-image: url('<?= $this->getImg('background-recruiting.jpg') ?>');">
-        <div class="cell text-center">
-            <h1 class="mt-8 mb-8">New <strong>approach</strong> to recruiting</h1>
-        </div>
-        <div class="cell medium-offset-1 medium-5 mr-2">
-            <p class="para-left">Lorem ipsum dolor sit ametsddsfdsfsdfsd, consectetur adipiscing elit.met sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor nunc. Phasellus id ipsum ac massa tincidunt varius. Duis nec sem eget  dolor sit ame maximus tortor in porttitor. Sed eu tortor nuncmetus</p>
-        </div>
-        <div class="cell medium-5 end mb-5 ml-2">
-            <p class="para-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor   dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor nunc Phasellus id ipsum ac massa tincidunt varius. Duis nec sem eget metus</p>
+<!--QQQQQQQQQQQQQQQQQQQQQQQQQQQQ-->
+<div class="background-img" style="background-image: url('<?= $this->getImg('background-recruiting.jpg') ?>');">
+    <div class="grid-container">
+        <div class="grid-x recruiting-approach-section">
+            <div class="cell text-center">
+                <h1 class="mt-8 mb-8">New <strong>approach</strong> to recruiting</h1>
+            </div>
+            <div class="cell small-text-center medium-offset-1 medium-5 medium-text-right">
+                <p class="para-left">Lorem ipsum dolor sit ametsddsfdsfsdfsd, consectetur adipiscing elit.met sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor nunc. Phasellus id ipsum ac massa tincidunt varius. Duis nec sem eget  dolor sit ame maximus tortor in porttitor. Sed eu tortor nuncmetus</p>
+            </div>
+            <div class="cell small-text-center medium-5 end mb-5 medium-text-left">
+                <p class="para-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor   dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus tortor in porttitor. Sed eu tortor nunc Phasellus id ipsum ac massa tincidunt varius. Duis nec sem eget metus</p>
+            </div>
         </div>
     </div>
 </div>
-
 <div class="grid-container mt-10">
-    <div class="ml-20 mr-20">
-        <div class="grid-x pricing-section">
-            <div class="cell medium-3 text-right pr-3">
+    <div class="pricing-section ">
+        <div class="grid-x small-scaling">
+            <div class="cell small-12 medium-6 large-3 text-right pr-3">
                 <h1 class="mt-2 mb-3"><strong>Plans &</strong> pricing</h1>
                 <p class="subText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat nibh ut urna ultrices rutrum. Duis lacus eros, egestas non malesuada in, bibendum sit amet sapien. Nulla gravida maximus torto</p>
             </div>
-            <div class="cell medium-3">
+            <div class="cell small-12 medium-6 large-3 small-disp">
                 <?= Price::i()
                     ->setTitle('Start Up')
                     ->setPrice('$29')
@@ -146,7 +141,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                     ->setDescription('One Time Fee Allows 5 Job Postings HighLighted Job Post Posted For 90 Days');
                 ?>
             </div>
-            <div class="cell medium-3">
+            <div class="cell small-12 medium-6 large-3 small-disp">
                 <?= Price::i()
                     ->setTitle('Enterprise')
                     ->setPrice('$69')
@@ -154,7 +149,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                     ->setDescription('One Time Fee Allows 5 Job Postings HighLighted Job Post Posted For 90 Days');
                 ?>
             </div>
-            <div class="cell medium-3">
+            <div class="cell small-12 medium-6 large-3 small-disp ">
                 <?= Price::i()
                     ->setTitle('Company')
                     ->setPrice('$329')
@@ -165,72 +160,73 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         </div>
     </div>
 </div>
-
-<div class="grid-container mt-10">
-    <div class="grid-x stats-section pb-10" style="background-image: url('<?= $this->getImg('background-plant.jpg') ?>');">
-        <div class="cell text-center">
-            <h1 class="mt-8 mb-8">Site<strong> stats</strong></h1>
-        </div>
-        <div class="grid-x about-us-section grid-padding-y">
-            <div class="cell medium-offset-1 medium-5">
+<div class="mt-10 background-img" style="background-image: url('<?= $this->getImg('background-plant.jpg') ?>');">
+    <div class="grid-container">
+        <div class="grid-x stats-section pb-10">
+            <div class="cell text-center">
+                <h1 class="mt-8 mb-8">Site<strong> stats</strong></h1>
+            </div>
+            <div class="grid-x about-us-section grid-padding-y">
+                <div class="cell medium-offset-1 medium-5">
+                    <?=
+                    FeatureCard::i()
+                        ->setTitle('Loreim ipsum dolor sit amet')
+                        ->setDescription(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        )
+                        ->setPercent('75')
+                        ->textCenter(Breakpoints::SMALL())
+                        ->iconCenter(Breakpoints::SMALL())
+                        ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->statStyle()
+                    ?>
+                </div>
+                <div class="cell medium-5 ml-1">
+                    <?=
+                    FeatureCard::i()
+                        ->setTitle('Loreim ipsum dolor sit amet')
+                        ->setDescription(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        )
+                        ->setPercent('25')
+                        ->textCenter(Breakpoints::SMALL())
+                        ->iconCenter(Breakpoints::SMALL())
+                        ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->statStyle()
+                    ?>
+                </div>
+                <div class="cell medium-offset-1 medium-5">
                 <?=
                 FeatureCard::i()
                     ->setTitle('Loreim ipsum dolor sit amet')
                     ->setDescription(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                     )
-                    ->setPercent('75')
+                    ->setPercent('50')
                     ->textCenter(Breakpoints::SMALL())
                     ->iconCenter(Breakpoints::SMALL())
                     ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                     ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                     ->statStyle()
                 ?>
-            </div>
-            <div class="cell medium-5 ml-1">
-                <?=
-                FeatureCard::i()
-                    ->setTitle('Loreim ipsum dolor sit amet')
-                    ->setDescription(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                    )
-                    ->setPercent('25')
-                    ->textCenter(Breakpoints::SMALL())
-                    ->iconCenter(Breakpoints::SMALL())
-                    ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->statStyle()
-                ?>
-            </div>
-            <div class="cell medium-offset-1 medium-5">
-            <?=
-            FeatureCard::i()
-                ->setTitle('Loreim ipsum dolor sit amet')
-                ->setDescription(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                )
-                ->setPercent('50')
-                ->textCenter(Breakpoints::SMALL())
-                ->iconCenter(Breakpoints::SMALL())
-                ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                ->statStyle()
-            ?>
-            </div>
-            <div class="cell medium-5 end ml-1">
-                <?=
-                FeatureCard::i()
-                    ->setTitle('Loreim ipsum dolor sit amet')
-                    ->setDescription(
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-                    )
-                    ->setPercent('75')
-                    ->textCenter(Breakpoints::SMALL())
-                    ->iconCenter(Breakpoints::SMALL())
-                    ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->statStyle()
-                ?>
+                </div>
+                <div class="cell medium-5 end ml-1">
+                    <?=
+                    FeatureCard::i()
+                        ->setTitle('Loreim ipsum dolor sit amet')
+                        ->setDescription(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        )
+                        ->setPercent('75')
+                        ->textCenter(Breakpoints::SMALL())
+                        ->iconCenter(Breakpoints::SMALL())
+                        ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->statStyle()
+                    ?>
+                </div>
             </div>
         </div>
     </div>

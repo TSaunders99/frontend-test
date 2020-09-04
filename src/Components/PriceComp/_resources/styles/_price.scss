@@ -3,7 +3,7 @@
 $this: ".price";
 
 #{$this} {
-  .topPrice{
+  &__top-price{
     background-color: #ebebeb;
     border-width: 1px;
     border-style: solid;
@@ -13,11 +13,11 @@ $this: ".price";
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .bottomPrice{
+  &__bottom-price{
     background-color: #363636;
     padding: 40px;
   }
-  .priceCont{
+  &__price-cont{
     margin-right: 7px;
     margin-left: 7px;
   }

@@ -11,17 +11,16 @@ use ProtectedNet\FrontendTest\Partials\HeroContent\SlideThree\SlideThree;
 
 
 <div class="<?= $this->getElementName('content') ?>">
-    <div class="grid-container">
+    <div class="grid-container <?= $this->getElementName('job-post-holder') ?>">
         <div class="grid-x">
             <div class="cell">
-                <h1 class="<?= $this->getElementName('title') ?>"><strong>Kick-starting</strong></h1>
-                <h1 class="<?= $this->getElementName('title-second') ?> text-right"> careers</h1>
+                <h1 class="<?= $this->getElementName('title') ?>">Looking for <strong>new</strong> candidates?</h1>
             </div>
-        </div>
-
-        <div class="grid-x grid-padding-y grid-padding-x <?= $this->getElementName('cta-holder') ?>">
-            <div class="cell medium-offset-1 medium-10 text-center">
-                <?= Button::i('Hear from our customers!')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
+            <div class="medium-5 medium-offset-1">
+                <p class="<?= $this->getElementName('job-post-desc') ?>">Are you a business looking to expand and find the best possible candidates for your role? If so post your job opportunity here and we will handle the rest</p>
+            </div>
+            <div class="medium-4 medium-offset-1 <?= $this->getElementName('job-post-button') ?>">
+                <?= Button::i('Get started now!')->iconRight("<i class='fa fa-arrow-right'></i>") ?>
             </div>
         </div>
     </div>

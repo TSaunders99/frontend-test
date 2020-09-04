@@ -9,23 +9,23 @@ use ProtectedNet\FrontendTest\Components\Button\Button;
 
 <div class="<?= $this->getElementName('content') ?>">
 
-    <div class="priceCont text-center">
-        <div class="topPrice">
+    <div class="<?= $this->getElementName('price-cont') ?> text-center">
+        <div class="<?= $this->getElementName('top-price') ?>">
             <?php if($this->getTitle()): ?>
-                <h4 class="price__title"><?= $this->getTitle() ?></h4>
+                <h4 class="<?= $this->getElementName('title') ?>"><?= $this->getTitle() ?></h4>
             <?php endif; ?>
 
             <?php if($this->getPrice()): ?>
-                <h2 class="price__price"><?= $this->getPrice() ?></h2>
+                <h2 class="<?= $this->getElementName('price') ?>"><?= $this->getPrice() ?></h2>
             <?php endif; ?>
 
             <?php if($this->getPrice()): ?>
-                <p class="price__subtitle"><?= $this->getSubtitle() ?></p>
+                <p class="<?= $this->getElementName('subtitle') ?>"><?= $this->getSubtitle() ?></p>
             <?php endif; ?>
         </div>
-        <div class="BottomPrice">
+        <div class="<?= $this->getElementName('bottom-price') ?>">
             <?php if($this->getDescription()): ?>
-                <p class="price__description"><?= $this->getDescription() ?></p>
+                <p class="<?= $this->getElementName('description') ?>"><?= $this->getDescription() ?></p>
             <?php endif; ?>
             <?= Button::i('Shop Now!')->iconRight("<i class='fa fa-chevron-right'></i>")->priceAnimate()->small()?>
         </div>

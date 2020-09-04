@@ -1,3 +1,4 @@
+@import 'base';
 $this: ".slide-three";
 
 
@@ -19,31 +20,73 @@ $this: ".slide-three";
   }
 
   &__title {
-    color: white;
-    text-align: left;
-    max-width: 475px;
-    margin: 200px auto auto;
     font-size: 60px;
-
-
+    color: white;
+    text-align: center;
+    margin-top: 250px;
   }
 
-  &__title-second {
-    color: white;
+  &__job-post-desc{
+    color: $theme-color-primary;
     text-align: right;
-    max-width: 475px;
-    margin: 0px 330px 0px auto;
-    font-size: 60px;
+    font-size: 20px;
+    margin: 20px;
+    margin-right: 0px;
+  }
+  &__job-post-button{
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: 5%;
+  }
 
+  &__job-post-holder{
+    width: 70%;
   }
 
   &__cta-holder {
     margin-top: 20px;
   }
+
+
+  @include breakpoint(medium only){
+    &__title {
+      font-size: 45px;
+      margin: 0px;
+      margin-top: 215px;
+    }
+    &__job-post-desc{
+      font-size: 17px;
+      text-align: center;
+    }
+    &__job-post-button{
+      margin-top: 66px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @include breakpoint(small only){
+    &__job-post-holder{
+      width: 90%;
+    }
+    &__title {
+      font-size: 30px;
+      margin: 0px;
+      margin-top: 100px;
+    }
+    &__job-post-desc{
+      font-size: 15px;
+      text-align: center;
+    }
+    &__job-post-button{
+      margin-top: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
 
-.box-shadow{
-  -webkit-box-shadow: 7px 9px 34px -8px rgba(106,176,129,0.91);
-  -moz-box-shadow: 7px 9px 34px -8px rgba(106,176,129,0.91);
-  box-shadow: 7px 9px 34px -8px rgba(106,176,129,0.91);
+.box-shadow {
+  -webkit-box-shadow: 7px 9px 34px -8px rgba(106, 176, 129, 0.91);
+  -moz-box-shadow: 7px 9px 34px -8px rgba(106, 176, 129, 0.91);
+  box-shadow: 7px 9px 34px -8px rgba(106, 176, 129, 0.91);
 }

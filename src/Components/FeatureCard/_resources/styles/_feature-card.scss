@@ -12,7 +12,7 @@ $this: ".feature-card";
     }
   }
 
-  &__percentStyle{
+  &__percent-style{
     color: $theme-color-primary;
     display: inline-block;
     margin: auto;
@@ -105,17 +105,17 @@ $this: ".feature-card";
     border-top-color: $theme-color-primary;
     transform: rotate(45deg);
   }
-  .twenty-five-percent{
+  &__twenty-five-percent{
     transform: rotate(-45deg);
   }
 
   //50%
-  .fifty-five-base{
+  .fifty-base{
     border-top-color: white;
     border-left-color: white;
     transform: rotate(-45deg);
   }
-  .fifty-five-percent{
+  &__fifty-percent{
     transform: rotate(45deg);
   }
 
@@ -124,7 +124,7 @@ $this: ".feature-card";
     border-top-color: white;
     transform: rotate(-45deg);
   }
-  .seventy-five-percent{
+  &__seventy-five-percent{
     transform: rotate(45deg);
   }
 

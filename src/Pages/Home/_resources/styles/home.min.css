@@ -1,3 +1,9 @@
+.background-img {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
 .about-us-section .icon-wrapper i {
   font-size: 30px;
 }
@@ -10,14 +16,44 @@
   text-align: right;
   line-height: 150%;
   font-weight: bold;
+  margin-right: 10px;
 }
 .recruiting-approach-section .para-right {
   text-align: left;
   font-size: small;
+  margin-left: 5px;
+}
+@media print, screen and (max-width: 39.99875em) {
+  .recruiting-approach-section .para-left {
+    text-align: center;
+    margin: 0px;
+  }
+  .recruiting-approach-section .para-right {
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 
 .pricing-section .subText {
   font-size: 11px;
+}
+.pricing-section .small-scaling {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+@media print, screen and (max-width: 39.99875em) {
+  .pricing-section .small-scaling {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media print, screen and (max-width: 63.99875em) {
+  .pricing-section .small-disp {
+    margin-bottom: 10px;
+  }
 }
 
 .stats-section {

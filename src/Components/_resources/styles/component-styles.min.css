@@ -78,7 +78,7 @@
 .feature-card__icon * {
   font-size: inherit;
 }
-.feature-card__percentStyle {
+.feature-card__percent-style {
   color: #23ba85;
   display: inline-block;
   margin: auto;
@@ -198,22 +198,22 @@
   border-top-color: #23ba85;
   transform: rotate(45deg);
 }
-.feature-card .twenty-five-percent {
+.feature-card__twenty-five-percent {
   transform: rotate(-45deg);
 }
-.feature-card .fifty-five-base {
+.feature-card .fifty-base {
   border-top-color: white;
   border-left-color: white;
   transform: rotate(-45deg);
 }
-.feature-card .fifty-five-percent {
+.feature-card__fifty-percent {
   transform: rotate(45deg);
 }
 .feature-card .seventy-five-base {
   border-top-color: white;
   transform: rotate(-45deg);
 }
-.feature-card .seventy-five-percent {
+.feature-card__seventy-five-percent {
   transform: rotate(45deg);
 }
 .feature-card .hundred-base {
@@ -940,7 +940,7 @@
   }
 }
 
-.price .topPrice {
+.price__top-price {
   background-color: #ebebeb;
   border-width: 1px;
   border-style: solid;
@@ -950,11 +950,11 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.price .bottomPrice {
+.price__bottom-price {
   background-color: #363636;
   padding: 40px;
 }
-.price .priceCont {
+.price__price-cont {
   margin-right: 7px;
   margin-left: 7px;
 }
