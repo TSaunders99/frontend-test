@@ -12,27 +12,6 @@ $this: ".feature-card";
     }
   }
 
-  &__percent-style{
-    color: $theme-color-primary;
-    display: inline-block;
-    margin: auto;
-    text-align: center;
-    position: relative;
-    min-height: 120px;
-    min-width: 120px;
-
-    border-radius: 50%;
-    border-style: solid;
-    border-color: $theme-color-primary;
-    border-width: 7px;
-
-    line-height: 1;
-    font-size: 35px;
-    padding-top: 25px;
-  }
-
-
-
   &__title {
     line-height: 30px;
     margin: 0;
@@ -93,45 +72,6 @@ $this: ".feature-card";
     }
   }
 
-
-
-
-
-
-  //Hard coded rotations
-  //25%
-  .twenty-five-base{
-    border-color: white;
-    border-top-color: $theme-color-primary;
-    transform: rotate(45deg);
-  }
-  &__twenty-five-percent{
-    transform: rotate(-45deg);
-  }
-
-  //50%
-  .fifty-base{
-    border-top-color: white;
-    border-left-color: white;
-    transform: rotate(-45deg);
-  }
-  &__fifty-percent{
-    transform: rotate(45deg);
-  }
-
-  //75%
-  .seventy-five-base{
-    border-top-color: white;
-    transform: rotate(-45deg);
-  }
-  &__seventy-five-percent{
-    transform: rotate(45deg);
-  }
-
-  //100%
-  .hundred-base{
-    border-color: $theme-color-primary;
-  }
 }
 
 

@@ -12,9 +12,6 @@ use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
-<div><?= Border::i(Percent::i()->setPercent("100"))?></div>
-
-
 <div class="grid-container mb-5">
   <div class="grid-x">
     <div class="cell text-center">
@@ -184,6 +181,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                         ->iconCenter(Breakpoints::SMALL())
                         ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                         ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->statStyle()
                     ?>
                 </div>
                 <div class="cell medium-5 ml-1">
@@ -198,6 +196,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                         ->iconCenter(Breakpoints::SMALL())
                         ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->statStyle()
                     ?>
                 </div>
                 <div class="cell medium-offset-1 medium-5">
@@ -212,6 +211,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                     ->iconCenter(Breakpoints::SMALL())
                     ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                     ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                    ->statStyle()
                 ?>
                 </div>
                 <div class="cell medium-5 end ml-1">
@@ -226,6 +226,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                         ->iconCenter(Breakpoints::SMALL())
                         ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+                        ->statStyle()
                     ?>
                 </div>
             </div>

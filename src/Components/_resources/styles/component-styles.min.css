@@ -78,22 +78,6 @@
 .feature-card__icon * {
   font-size: inherit;
 }
-.feature-card__percent-style {
-  color: #23ba85;
-  display: inline-block;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  min-height: 120px;
-  min-width: 120px;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: #23ba85;
-  border-width: 7px;
-  line-height: 1;
-  font-size: 35px;
-  padding-top: 25px;
-}
 .feature-card__title {
   line-height: 30px;
   margin: 0;
@@ -193,36 +177,12 @@
   color: white;
   font-size: 12px;
 }
-.feature-card .twenty-five-base {
-  border-color: white;
-  border-top-color: #23ba85;
-  transform: rotate(45deg);
-}
-.feature-card__twenty-five-percent {
-  transform: rotate(-45deg);
-}
-.feature-card .fifty-base {
-  border-top-color: white;
-  border-left-color: white;
-  transform: rotate(-45deg);
-}
-.feature-card__fifty-percent {
-  transform: rotate(45deg);
-}
-.feature-card .seventy-five-base {
-  border-top-color: white;
-  transform: rotate(-45deg);
-}
-.feature-card__seventy-five-percent {
-  transform: rotate(45deg);
-}
-.feature-card .hundred-base {
-  border-color: #23ba85;
-}
 
 .border__content-holder {
   display: inline-block;
   margin: auto;
+  margin-top: 25px;
+  margin-right: 10px;
   text-align: center;
   position: relative;
   min-height: 120px;
@@ -239,30 +199,30 @@
   border-color: white;
   border-top-color: #23ba85;
   transform: rotate(45deg);
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 .border--rotate-50 .border__content-holder {
   border-top-color: white;
   border-left-color: white;
   transform: rotate(-45deg);
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 .border--rotate-75 .border__content-holder {
   border-top-color: white;
   transform: rotate(-45deg);
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .hero-banner {
@@ -985,16 +945,16 @@
   }
 }
 
-.Percent {
+.percent {
   color: #23ba85;
 }
-.Percent--rotate-25 {
+.percent--rotate-25 {
   transform: rotate(-45deg);
 }
-.Percent--rotate-50 {
+.percent--rotate-50 {
   transform: rotate(45deg);
 }
-.Percent--rotate-75 {
+.percent--rotate-75 {
   transform: rotate(45deg);
 }
 

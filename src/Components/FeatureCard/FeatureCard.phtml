@@ -9,29 +9,6 @@ use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
   </div>
 <?php endif; ?>
 
-<?php if($this->getPercent()):
-    if (($this->getPercent() == "25")):?>
-    <div class="<?= $this->getElementName('percent-style')?> twenty-five-base">
-        <p class="<?= $this->getElementName('twenty-five-percent') ?>"><?= $this->getPercent()?>%</p>
-    </div>
-    <?php endif;
-    if (($this->getPercent() == "50")):?>
-    <div class="<?= $this->getElementName('percent-style') ?> fifty-base">
-        <p class="<?= $this->getElementName('fifty-percent') ?>"><?= $this->getPercent()?>%</p>
-    </div>
-    <?php endif;
-        if (($this->getPercent() == "75")):?>
-    <div class="<?= $this->getElementName('percent-style') ?> seventy-five-base">
-        <p class="<?= $this->getElementName('seventy-five-percent') ?>"><?= $this->getPercent()?>%</p>
-    </div>
-    <?php endif;
-        if (($this->getPercent() == "100")):?>
-    <div class="<?= $this->getElementName('percent-style') ?> hundred-base">
-        <p class=""<?= $this->getElementName('hundred-percent') ?>percent"><?= $this->getPercent()?>%</p>
-    </div>
-    <?php endif; ?>
-<?php endif; ?>
-
 <div class="<?= $this->getElementName('content') ?>">
   <?php if($this->getTitle()): ?>
     <h4 class="<?= $this->getElementName('title') ?>"><?= $this->getTitle() ?></h4>
