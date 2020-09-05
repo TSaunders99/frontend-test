@@ -25,8 +25,6 @@ class Price extends AbstractComponent
     {
         return $this->_title;
     }
-
-
     /**
      * @param string $title
      *
@@ -38,8 +36,6 @@ class Price extends AbstractComponent
 
         return $this;
     }
-
-
     /**
      * @return string
      */
@@ -47,8 +43,6 @@ class Price extends AbstractComponent
     {
         return $this->_price;
     }
-
-
     /**
      * @param string $price
      *
@@ -60,7 +54,6 @@ class Price extends AbstractComponent
 
         return $this;
     }
-
     /**
      * @return string
      */

@@ -5,11 +5,16 @@
 use PackagedUi\FontAwesome\FaIcons;
 use ProtectedNet\FrontendTest\Components\Button\Button;
 use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
+use ProtectedNet\FrontendTest\Components\FillWrapper\Border;
+use ProtectedNet\FrontendTest\Components\PercentDisplay\Percent;
 use ProtectedNet\FrontendTest\Components\PriceComp\Price;
 use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
+<div><?= Border::i(Percent::i()->setPercent("100"))?></div>
+
+
 <div class="grid-container mb-5">
   <div class="grid-x">
     <div class="cell text-center">
@@ -174,12 +179,11 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                         ->setDescription(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                         )
-                        ->setPercent('75')
+                        ->setIcon(Border::i(Percent::i()->setPercent("75")->rotate75())->rotate75())
                         ->textCenter(Breakpoints::SMALL())
                         ->iconCenter(Breakpoints::SMALL())
                         ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                         ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                        ->statStyle()
                     ?>
                 </div>
                 <div class="cell medium-5 ml-1">
@@ -189,12 +193,11 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                         ->setDescription(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                         )
-                        ->setPercent('25')
+                        ->setIcon(Border::i(Percent::i()->setPercent("25")->rotate25())->rotate25())
                         ->textCenter(Breakpoints::SMALL())
                         ->iconCenter(Breakpoints::SMALL())
                         ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                        ->statStyle()
                     ?>
                 </div>
                 <div class="cell medium-offset-1 medium-5">
@@ -204,12 +207,11 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                     ->setDescription(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                     )
-                    ->setPercent('50')
+                    ->setIcon(Border::i(Percent::i()->setPercent("50")->rotate50())->rotate50())
                     ->textCenter(Breakpoints::SMALL())
                     ->iconCenter(Breakpoints::SMALL())
                     ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                     ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                    ->statStyle()
                 ?>
                 </div>
                 <div class="cell medium-5 end ml-1">
@@ -219,12 +221,11 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
                         ->setDescription(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                         )
-                        ->setPercent('75')
+                        ->setIcon(Border::i(Percent::i()->setPercent("75")->rotate75())->rotate75())
                         ->textCenter(Breakpoints::SMALL())
                         ->iconCenter(Breakpoints::SMALL())
                         ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
                         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
-                        ->statStyle()
                     ?>
                 </div>
             </div>

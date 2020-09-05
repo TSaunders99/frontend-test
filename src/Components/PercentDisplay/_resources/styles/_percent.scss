@@ -1,0 +1,18 @@
+@import 'base';
+
+$this: ".Percent";
+
+#{$this} {
+  color: $theme-color-primary;
+
+  &--rotate-25{
+    transform: rotate(-45deg);
+  }
+  &--rotate-50{
+    transform: rotate(45deg);
+  }
+  &--rotate-75{
+    transform: rotate(45deg);
+  }
+
+}

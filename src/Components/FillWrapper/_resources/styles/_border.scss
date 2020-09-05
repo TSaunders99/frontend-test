@@ -1,0 +1,63 @@
+@import 'base';
+
+$this: ".border";
+
+#{$this} {
+  &__content-holder{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    min-height: 120px;
+    min-width: 120px;
+
+    border-radius: 50%;
+    border-style: solid;
+    border-color: $theme-color-primary;
+    border-width: 7px;
+
+    line-height: 1;
+    font-size: 35px;
+    padding-top: 28px;
+  }
+
+
+  &--rotate-25{
+    #{$this}__content-holder {
+      border-color: white;
+      border-top-color: $theme-color-primary;
+      transform: rotate(45deg);
+      -webkit-transition: 3s;
+      -moz-transition: 3s;
+      -ms-transition: 3s;
+      -o-transition: 3s;
+      transition: 3s;
+    }
+  }
+
+  &--rotate-50{
+    #{$this}__content-holder{
+      border-top-color: white;
+      border-left-color: white;
+      transform: rotate(-45deg);
+      -webkit-transition: 3s;
+      -moz-transition: 3s;
+      -ms-transition: 3s;
+      -o-transition: 3s;
+      transition: 3s;
+    }
+  }
+
+  &--rotate-75 {
+    #{$this}__content-holder {
+      border-top-color: white;
+      transform: rotate(-45deg);
+      -webkit-transition: 3s;
+      -moz-transition: 3s;
+      -ms-transition: 3s;
+      -o-transition: 3s;
+      transition: 3s;
+    }
+  }
+
+}
