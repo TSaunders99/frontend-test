@@ -93,9 +93,6 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function countPercent(givenPercent) {
-    return givenPercent;
-}
 
 
 /***/ })
