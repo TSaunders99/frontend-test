@@ -3,8 +3,6 @@
 $this: ".percent";
 
 #{$this} {
-  color: $theme-color-primary;
-
   &--rotate-25{
     transform: rotate(-45deg);
   }
@@ -15,4 +13,7 @@ $this: ".percent";
     transform: rotate(45deg);
   }
 
+  &--green{
+    color: $theme-color-primary;
+  }
 }

@@ -57,6 +57,9 @@
 .btn--full-width {
   width: 100%;
 }
+.btn--center-text {
+  text-align: center;
+}
 .btn--animate-price:hover {
   transform: translateY(4px);
 }
@@ -949,9 +952,6 @@
   }
 }
 
-.percent {
-  color: #23ba85;
-}
 .percent--rotate-25 {
   transform: rotate(-45deg);
 }
@@ -960,6 +960,9 @@
 }
 .percent--rotate-75 {
   transform: rotate(45deg);
+}
+.percent--green {
+  color: #23ba85;
 }
 
 .price__top-price {

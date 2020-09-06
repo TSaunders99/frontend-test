@@ -85,6 +85,9 @@ $this: ".btn";
     width:100%;
   }
 
+  &--center-text{
+    text-align: center;
+  }
   &--animate-price:hover{
     transform: translateY(4px);
   }

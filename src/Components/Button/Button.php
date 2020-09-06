@@ -92,4 +92,8 @@ class Button extends AbstractComponent
     {
         return $this->_addModifier('small');
     }
+    public function centerText()
+    {
+        return $this->_addModifier('center-text');
+    }
 }

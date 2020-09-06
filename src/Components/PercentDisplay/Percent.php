@@ -62,6 +62,9 @@ class Percent extends AbstractComponent
     {
         return $this->_addModifier('rotate-75');
     }
-
+    public function green()
+    {
+        return $this->_addModifier('green');
+    }
 
 }
