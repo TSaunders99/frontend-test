@@ -86,13 +86,144 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/Components/AbstractComponent.ts":
+/*!*********************************************!*\
+  !*** ./src/Components/AbstractComponent.ts ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ComponentLoader = exports.AbstractComponent = void 0;
+var AbstractComponent_1 = __webpack_require__(/*! ../../vendor/aktorou/frontend-test-framework/src/Components/AbstractComponent */ "./vendor/aktorou/frontend-test-framework/src/Components/AbstractComponent.ts");
+var AbstractComponent = /** @class */ (function (_super) {
+    __extends(AbstractComponent, _super);
+    function AbstractComponent(componentElement, DI) {
+        return _super.call(this, componentElement, DI) || this;
+    }
+    return AbstractComponent;
+}(AbstractComponent_1.AbstractComponent));
+exports.AbstractComponent = AbstractComponent;
+var ComponentLoader = /** @class */ (function (_super) {
+    __extends(ComponentLoader, _super);
+    function ComponentLoader(component) {
+        return _super.call(this, component) || this;
+    }
+    return ComponentLoader;
+}(AbstractComponent_1.ComponentLoader));
+exports.ComponentLoader = ComponentLoader;
+
+
+/***/ }),
+
 /***/ "./src/Components/PercentDisplay/_resources/ts/Percent.c.ts":
 /*!******************************************************************!*\
   !*** ./src/Components/PercentDisplay/_resources/ts/Percent.c.ts ***!
   \******************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var AbstractComponent_1 = __webpack_require__(/*! ../../../AbstractComponent */ "./src/Components/AbstractComponent.ts");
+var PercentCounter = /** @class */ (function (_super) {
+    __extends(PercentCounter, _super);
+    function PercentCounter() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    PercentCounter.prototype.init = function () {
+    };
+    PercentCounter.selector = 'percent-counter';
+    return PercentCounter;
+}(AbstractComponent_1.AbstractComponent));
+
+
+/***/ }),
+
+/***/ "./vendor/aktorou/frontend-test-framework/src/Components/AbstractComponent.ts":
+/*!************************************************************************************!*\
+  !*** ./vendor/aktorou/frontend-test-framework/src/Components/AbstractComponent.ts ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ComponentLoader = exports.AbstractComponent = void 0;
+var AbstractComponent = /** @class */ (function () {
+    function AbstractComponent(componentElement, DI) {
+        this.DI = null;
+        this.componentElement = componentElement;
+        this.DI = DI;
+        return this;
+    }
+    AbstractComponent.prototype.init = function () {
+    };
+    AbstractComponent.prototype.getComponentClassName = function () {
+        return this.constructor['name'];
+    };
+    AbstractComponent.prototype.getComponentParameter = function () {
+        this.componentParam = this
+            .componentElement
+            .attr(this.constructor['selector']);
+        return this.componentParam;
+    };
+    AbstractComponent.prototype.getComponentElement = function () {
+        return $("[component-id=\"" + this.getId() + "\"]");
+    };
+    AbstractComponent.prototype.getId = function () {
+        return this.componentElement.attr('component-id');
+    };
+    AbstractComponent.selector = null;
+    return AbstractComponent;
+}());
+exports.AbstractComponent = AbstractComponent;
+var ComponentLoader = /** @class */ (function () {
+    function ComponentLoader(component) {
+        var elements = $("[" + component.selector + "]");
+        for (var key = 0; key < elements.length; key++) {
+            if (elements.hasOwnProperty(key)) {
+                var element = $(elements[key]);
+                var id = component.selector + '_' + key;
+                element.attr('component-id', id);
+                (new component(element, {})).init();
+            }
+        }
+    }
+    ;
+    return ComponentLoader;
+}());
+exports.ComponentLoader = ComponentLoader;
 
 
 /***/ })

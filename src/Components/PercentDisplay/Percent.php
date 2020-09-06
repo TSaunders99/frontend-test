@@ -10,6 +10,13 @@ class Percent extends AbstractComponent
     protected $_percent;
 
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->setAttribute('percent-counter', true);
+    }
+
+
     /**
      * @return string
      */
