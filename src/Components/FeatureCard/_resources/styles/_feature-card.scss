@@ -57,11 +57,12 @@ $this: ".feature-card";
 
   &--stat-style{
     #{$this}__title {
+      padding-top: 17px;
       margin-left: 10px;
       margin-right: 10px;
       margin-top: 15px;
       color:  white;
-      font-size: 25px;
+      font-size: 23px;
       font-weight: 700;
     }
     #{$this}__description {
@@ -69,6 +70,10 @@ $this: ".feature-card";
       margin-right: 10px;
       color: white;
       font-size: 12px;
+    }
+    #{$this}__icon {
+      margin: 0px;
+      padding: 0 10px;
     }
   }
 

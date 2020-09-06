@@ -164,11 +164,12 @@
   font-size: 12px;
 }
 .feature-card--stat-style .feature-card__title {
+  padding-top: 17px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 15px;
   color: white;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 700;
 }
 .feature-card--stat-style .feature-card__description {
@@ -177,23 +178,26 @@
   color: white;
   font-size: 12px;
 }
+.feature-card--stat-style .feature-card__icon {
+  margin: 0px;
+  padding: 0 10px;
+}
 
 .border__content-holder {
   display: inline-block;
   margin: auto;
   margin-top: 25px;
-  margin-right: 10px;
   text-align: center;
   position: relative;
-  min-height: 120px;
-  min-width: 120px;
+  min-height: 130px;
+  min-width: 130px;
   border-radius: 50%;
   border-style: solid;
   border-color: #23ba85;
   border-width: 7px;
   line-height: 1;
   font-size: 35px;
-  padding-top: 28px;
+  padding-top: 30px;
 }
 .border--rotate-25 .border__content-holder {
   border-color: white;
