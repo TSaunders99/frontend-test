@@ -2,7 +2,7 @@
 namespace ProtectedNet\FrontendTest\Components\PercentDisplay;
 
 use ProtectedNet\FrontendTest\Components\AbstractComponent;
-use ProtectedNet\FrontendTest\Components\PriceComp\Price;
+use Packaged\Dispatch\ResourceManager;
 
 class Percent extends AbstractComponent
 {
@@ -74,4 +74,31 @@ class Percent extends AbstractComponent
         return $this->_addModifier('green');
     }
 
+    /**
+     * Used to set the blockname as an attribute on the component
+     * This is used for linking it to typescript component of the same nam
+     *
+     * @return $this
+     */
+    protected function _setPrimaryAttributes()
+    {
+        return $this->setAttribute($this->getBlockName(), true);
+    }
+
+
+    /**
+     * The resource manager is used to load any resources that aren't being included by default
+     * This is normally anything that's compiled local to the component or partial
+     *
+     * @param ResourceManager $manager
+     *
+     * @throws Exception
+     */
+    protected function _requireResources(ResourceManager $manager)
+    {
+        parent::_requireResources($manager);
+        $manager->requireJs('ts/Percent.c.js');
+    }
+
 }
+

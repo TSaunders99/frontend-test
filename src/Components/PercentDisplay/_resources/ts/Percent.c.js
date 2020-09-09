@@ -161,10 +161,13 @@ var PercentCounter = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     PercentCounter.prototype.init = function () {
+        _super.prototype.init.call(this);
+        console.log("test");
     };
     PercentCounter.selector = 'percent-counter';
     return PercentCounter;
 }(AbstractComponent_1.AbstractComponent));
+new AbstractComponent_1.ComponentLoader(PercentCounter);
 
 
 /***/ }),
