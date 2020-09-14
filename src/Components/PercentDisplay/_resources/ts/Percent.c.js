@@ -163,6 +163,8 @@ var PercentCounter = /** @class */ (function (_super) {
     PercentCounter.prototype.init = function () {
         _super.prototype.init.call(this);
         console.log("test");
+        var PercentContainer = document.getElementById("percent-display");
+        PercentContainer.innerText = "test";
     };
     PercentCounter.selector = 'percent-counter';
     return PercentCounter;

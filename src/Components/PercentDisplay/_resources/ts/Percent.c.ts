@@ -9,6 +9,8 @@ class PercentCounter extends AbstractComponent {
     init(){
         super.init();
             console.log("test");
+            let PercentContainer = document.getElementById("percent-display") as HTMLElement;
+            PercentContainer.innerText = "test";
     }
 }
 
